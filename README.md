@@ -1,3 +1,24 @@
+EDIT (21.10.2018):
+----
+
+This is a fork to allow builds to succeed on Linux. Tested and running on Ubuntu 17.10 64bit.
+
+Procedure:
+1. Install OpenFrameworks 0.9.8 64 bit for Linux - http://www.openframeworks.cc/versions/v0.9.8/of_v0.9.8_linux64_release.tar.gz
+
+2. Install following addons to OF/addons/:
+- ofxCv - "stable" branch for OF 0.9 - https://github.com/kylemcdonald/ofxCv
+- ofxFlowTools - "OF_098" branch - https://github.com/moostrik/ofxFlowTools
+- ofxSecondWindow - "master" branch - https://github.com/genekogan/ofxSecondWindow
+- ofxUI - "master" branch - https://github.com/rezaali/ofxUI
+
+3. clone crea to OF/apps/myapps/
+
+4. Build (with gcc-7): make
+
+5. make RunRelease
+
+
 CREA
 ====
 Interactive system that generates computer graphics using the motion data from the Kinect camera. Written for openFrameworks 0.8.4 (http://openframeworks.cc/). 
