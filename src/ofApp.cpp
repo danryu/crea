@@ -30,14 +30,14 @@ void ofApp::setup(){
     // ofSetVerticalSync(false);
     
     // setup Syphon
-    ofSetWindowTitle("ofxSyphon");
+//    ofSetWindowTitle("ofxSyphon");
     
-    mainOutputSyphonServer.setName("Screen Out");
-    individualTextureSyphonServer.setName("Texture Output");
+//    mainOutputSyphonServer.setName("Screen Out");
+//    individualTextureSyphonServer.setName("Texture Output");
     
-    mClient.setup();
-    mClient.set("", "Simple Server");
-    tex.allocate(200, 100, GL_RGBA);
+//    mClient.setup();
+//    mClient.set("", "Simple Server");
+//    tex.allocate(200, 100, GL_RGBA);
     
     #ifdef SECOND_WINDOW
         // the arguments for the second window are its initial x and y position,
@@ -695,9 +695,9 @@ void ofApp::draw(){
     if(drawSequencePatternsSeparate) sequence.drawPatternsSeparate(gestureUpdate);
     
     // Syphon Stuff
-    mClient.draw(50, 50);
-    mainOutputSyphonServer.publishScreen();
-    individualTextureSyphonServer.publishTexture(&tex);
+//    mClient.draw(50, 50);
+//    mainOutputSyphonServer.publishScreen();
+//    individualTextureSyphonServer.publishTexture(&tex);
 }
 
 //--------------------------------------------------------------

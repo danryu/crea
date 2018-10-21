@@ -26,7 +26,7 @@
 #include "ofxCv.h"
 #include "ofxKinect.h"
 #include "ofxFlowTools.h"
-#include "ofxSyphon.h"
+//#include "ofxSyphon.h"
 
 // Classes
 //-----------------------
@@ -241,10 +241,10 @@ class ofApp : public ofBaseApp{
         map<int, float> gestureUpdate;
         //------ofxSyphone------------------------------------------------
     
-        ofTexture tex;
+//        ofTexture tex;
     
-        ofxSyphonServer mainOutputSyphonServer;
-        ofxSyphonServer individualTextureSyphonServer;
+//        ofxSyphonServer mainOutputSyphonServer;
+//        ofxSyphonServer individualTextureSyphonServer;
     
-        ofxSyphonClient mClient;
+//        ofxSyphonClient mClient;
 };
